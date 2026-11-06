@@ -110,6 +110,217 @@ a {
     animation: appear 2s ease;
 }
 
+/* ==========================
+   ATMÓSFERA CINEMATOGRÁFICA
+========================== */
+
+.hero {
+    isolation: isolate;
+    overflow: hidden;
+    background: #111719;
+}
+
+.hero-background {
+    position: absolute;
+    inset: -3%;
+
+    background-image:
+        url("images/taiga-neblina.jpg");
+
+    background-size: cover;
+    background-position: center 45%;
+
+    z-index: -3;
+
+    animation: forest-drift 25s ease-in-out infinite alternate;
+}
+
+.dark-vignette {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(10, 15, 17, 0.3),
+            transparent 35%,
+            rgba(10, 15, 17, 0.85)
+        ),
+        radial-gradient(
+            ellipse,
+            transparent 20%,
+            rgba(8, 13, 15, 0.65) 100%
+        );
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* NIEBLA */
+
+.fog {
+    position: absolute;
+    inset: -15%;
+    pointer-events: none;
+    z-index: -2;
+
+    background:
+        radial-gradient(
+            ellipse at 30% 50%,
+            rgba(205, 214, 210, 0.16),
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at 75% 65%,
+            rgba(190, 200, 198, 0.12),
+            transparent 50%
+        );
+
+    filter: blur(35px);
+}
+
+.fog-one {
+    animation: fog-movement 35s ease-in-out infinite alternate;
+}
+
+.fog-two {
+    opacity: 0.5;
+    animation: fog-movement 50s ease-in-out infinite alternate-reverse;
+}
+
+/* MOVIMIENTOS */
+
+@keyframes fog-movement {
+    from {
+        transform: translateX(-4%) translateY(2%);
+    }
+
+    to {
+        transform: translateX(5%) translateY(-2%);
+    }
+}
+
+@keyframes forest-drift {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.07);
+    }
+}
+
+/* INDICADOR DE DESPLAZAMIENTO */
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #B8C0BD;
+}
+
+.scroll-indicator div {
+    height: 35px;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        #A6A69A,
+        transparent
+    );
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fog,
+    .hero-background {
+        animation: none;
+    }
+}
+
+/* ==========================
+   EL UMBRAL
+========================== */
+
+.threshold {
+    position: relative;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #171D20;
+}
+
+.threshold-image {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #171D20 0%,
+            rgba(23, 29, 32, 0.85) 35%,
+            rgba(23, 29, 32, 0.1) 100%
+        ),
+        url("images/forest-detail.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.75;
+}
+
+.threshold-content {
+    position: relative;
+    z-index: 1;
+    padding: 120px 12%;
+    max-width: 800px;
+}
+
+.threshold-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(48px, 7vw, 85px);
+    line-height: 1.05;
+    margin: 35px 0;
+}
+
+.threshold-content p {
+    white-space: pre-line;
+    max-width: 420px;
+    color: #B2BCB9;
+    font-size: 13px;
+    line-height: 2.1;
+}
+
+.threshold-signature {
+    display: block;
+    margin-top: 50px;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #A6A69A;
+}
+
+@media (max-width: 700px) {
+    .threshold {
+        min-height: 650px;
+    }
+
+    .threshold-content {
+        padding: 80px 8%;
+    }
+
+    .threshold-image {
+        background-position: 65% center;
+    }
+}
 .eyebrow {
     font-size: 10px;
     letter-spacing: 5px;
@@ -167,6 +378,106 @@ a {
     color: #C1C6C3;
 }
 
+
+/* ==========================
+   ARCHIVO NARRATIVO
+========================== */
+
+.manuscript {
+    background: #1D2528;
+    padding: 130px 15%;
+}
+
+.manuscript h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(55px, 7vw, 85px);
+}
+
+.manuscript-intro {
+    color: #A6B0AD;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    margin: 15px 0 75px;
+}
+
+.manuscript-entry {
+    display: grid;
+    grid-template-columns: 70px 1fr 50px;
+    align-items: center;
+    gap: 25px;
+
+    padding: 35px 0;
+    border-top: 1px solid #465052;
+
+    transition: 0.4s ease;
+}
+
+.manuscript-entry:hover {
+    padding-left: 15px;
+    border-color: #B5A58C;
+}
+
+.entry-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    color: #A6A69A;
+}
+
+.entry-details span {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #B5A58C;
+}
+
+.entry-details h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.entry-details p {
+    color: #9DA7A5;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.entry-arrow {
+    font-size: 25px;
+    color: #D5D9D6;
+    transition: 0.3s;
+}
+
+.manuscript-entry:hover .entry-arrow {
+    transform: translate(5px, -5px);
+    color: #B5A58C;
+}
+
+.locked-entry {
+    opacity: 0.35;
+}
+
+.entry-lock {
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .manuscript {
+        padding: 85px 8%;
+    }
+
+    .manuscript-entry {
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+    }
+
+    .entry-arrow,
+    .entry-lock {
+        display: none;
+    }
+}
 
 /* ==========================
    SECCIONES
