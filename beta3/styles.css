@@ -328,7 +328,7 @@ img {
 .threshold-content h2 em,
 .archive-content h2 em {
   color: var(--accent);
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .small-line {
@@ -344,7 +344,7 @@ img {
   margin-bottom: 18px;
 
   color: var(--muted);
-  font-size: 13px;
+  font-size: 18px;
   line-height: 2;
 }
 
