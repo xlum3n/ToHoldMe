@@ -524,6 +524,10 @@ img {
     border-bottom: 1px solid #394346;
 }
 
+.chapter-row {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* ARCHIVO */
 
