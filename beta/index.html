@@ -2,236 +2,254 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="To Hold Me — Una historia de misterio, suspenso y psicología en las profundidades de una taiga canadiense.">
+  <meta
+    name="description"
+    content="To Hold Me: una novela de misterio, suspenso y drama psicológico. Una historia entre la niebla de la taiga canadiense y el silencio previo al invierno."
+  >
 
-    <title>To Hold Me | A Story</title>
+  <meta name="theme-color" content="#171d20">
 
-    <link rel="stylesheet" href="styles.css">
+  <title>To Hold Me — The silence before the snow</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- NAVEGACIÓN -->
-
-    <header class="navbar">
-
-    <a href="#inicio" class="logo">
-        TO HOLD ME<span>.</span>
+  <!-- Navegación -->
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="To Hold Me, inicio">
+      TO HOLD ME<span>.</span>
     </a>
 
-    <nav aria-label="Navegación principal">
-        <a href="#umbral">EL UMBRAL</a>
-        <a href="#capitulos">CAPÍTULOS</a>
-        <a href="#archivo">EL ARCHIVO</a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#umbral">La historia</a>
+      <a href="#capitulos">Capítulos</a>
+      <a href="#archivo">Archivo</a>
     </nav>
+  </header>
 
-</header>
 
+  <main>
 
     <!-- PORTADA -->
+    <section class="hero" id="inicio">
 
-    <main>
+      <div class="hero-background"></div>
+      <div class="fog fog-one"></div>
+      <div class="fog fog-two"></div>
+      <div class="dark-vignette"></div>
 
-        
-<section class="hero" id="inicio">
-
-    <div class="hero-background"></div>
-    <div class="fog fog-one"></div>
-    <div class="fog fog-two"></div>
-    <div class="dark-vignette"></div>
-
-    <div class="hero-content">
-
-        <span class="eyebrow">
-            UNA NOVELA DE MISTERIO Y SUSPENSO
-        </span>
+      <div class="hero-content">
+        <p class="eyebrow">
+          UNA NOVELA DE MISTERIO Y SUSPENSO
+        </p>
 
         <h1>To Hold Me</h1>
 
-        <div class="title-divider"></div>
-
-        <p class="hero-description">
-            Antes de la primera nevada,<br>
-            el silencio ya escondía algo.
+        <p class="hero-subtitle">
+          Antes de la primera nevada,<br>
+          el silencio ya escondía algo.
         </p>
 
-        <a href="#umbral" class="explore-button">
-            DESCUBRIR LA HISTORIA
-            <span>↓</span>
+        <a href="#umbral" class="primary-button">
+          DESCUBRIR LA HISTORIA
+          <span aria-hidden="true">↗</span>
         </a>
+      </div>
 
-    </div>
-
-    <div class="hero-footer">
+      <div class="hero-location">
         <span>TAIGA CANADIENSE</span>
+        <span class="location-divider"></span>
         <span>ANTES DEL INVIERNO</span>
-    </div>
+      </div>
 
-    <div class="scroll-indicator">
-        <span>DESLIZA PARA CONTINUAR</span>
-        <div></div>
-    </div>
+      <a href="#umbral" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+        <span></span>
+      </a>
 
-</section>
+    </section>
 
-        
-<section class="threshold" id="umbral">
 
-    <div class="threshold-image"></div>
+    <!-- EL UMBRAL -->
+    <section class="threshold section-padding" id="umbral">
 
-    <div class="threshold-content">
+      <div class="threshold-image">
+        <img
+          src="images/forest-detail.jpg"
+          alt="Detalle de un bosque de coníferas cubierto por la niebla"
+        >
+      </div>
 
-        <span class="section-label">
-            UNA HISTORIA COMIENZA
-        </span>
+      <div class="threshold-content">
+        <p class="section-label">01 — EL UMBRAL</p>
 
         <h2>
-            Hay lugares<br>
-            que prefieren<br>
-            permanecer ocultos.
+          Hay lugares que prefieren
+          <em>permanecer ocultos.</em>
         </h2>
 
-        <div class="title-divider"></div>
+        <div class="small-line"></div>
 
         <p>
-            En algún lugar de la taiga canadiense,
-            el otoño comienza a despedirse.
-
-            Los días se acortan, la niebla se
-            vuelve más espesa y el invierno
-            se aproxima silenciosamente.
-
-            Pero hay cosas que no desaparecen
-            con la llegada del frío.
+          En algún lugar de la taiga canadiense, el otoño comienza
+          a despedirse. Los días se acortan, la niebla se extiende
+          entre los árboles y el invierno se aproxima lentamente.
         </p>
 
-        <span class="threshold-signature">
-            TO HOLD ME — 001
+        <p>
+          Todo parece inmóvil. Sin embargo, hay silencios que
+          esconden mucho más de lo que revelan.
+        </p>
+
+        <a href="#capitulos" class="text-link">
+          ENTRAR EN LA HISTORIA <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+    </section>
+
+
+    <!-- FRASE DE TRANSICIÓN -->
+    <section class="interlude">
+      <div class="interlude-overlay"></div>
+
+      <div class="interlude-content">
+        <span class="quote-mark">“</span>
+
+        <p>
+          No todo lo que desaparece<br>
+          deja de estar presente.
+        </p>
+
+        <span class="interlude-caption">
+          TO HOLD ME — FRAGMENTO DEL UNIVERSO NARRATIVO
         </span>
-
-    </div>
-
-</section>
+      </div>
+    </section>
 
 
-        <!-- INTRODUCCIÓN -->
+    <!-- CAPÍTULOS -->
+    <section class="chapters section-padding" id="capitulos">
 
-        <section class="story-section" id="story">
+      <div class="section-heading">
+        <p class="section-label">02 — EL MANUSCRITO</p>
 
-            <div class="section-label">01 — THE BEGINNING</div>
+        <h2>
+          Cada historia<br>
+          comienza en algún lugar.
+        </h2>
 
-            <div class="story-content">
+        <p class="section-description">
+          El camino hacia aquello que todavía no conocemos.
+        </p>
+      </div>
 
-                <h2>
-                    Somewhere<br>
-                    beyond the fog.
-                </h2>
+      <div class="chapter-list">
 
-                <p>
-                    Deep within the Canadian wilderness, where
-                    the trees disappear into the mist and the
-                    silence seems almost unnatural, a story
-                    begins to unfold.
-                </p>
+        <article class="chapter-row">
+          <div class="chapter-number">01</div>
 
-                <p>
-                    Winter has not yet arrived. But something
-                    tells us that it is already too late.
-                </p>
+          <div class="chapter-information">
+            <span class="chapter-status">PRIMER CAPÍTULO</span>
+            <h3>El comienzo</h3>
+            <p>
+              Los acontecimientos previos a la primera nevada.
+            </p>
+          </div>
 
-            </div>
+          <div class="chapter-action">
+            <span>EN PREPARACIÓN</span>
+            <span class="chapter-arrow" aria-hidden="true">↗</span>
+          </div>
+        </article>
 
-        </section>
+        <article class="chapter-row chapter-locked">
+          <div class="chapter-number">02</div>
+
+          <div class="chapter-information">
+            <span class="chapter-status">PRÓXIMAMENTE</span>
+            <h3>Sin título</h3>
+            <p>
+              Algunas páginas todavía deben permanecer ocultas.
+            </p>
+          </div>
+
+          <div class="chapter-action">
+            <span>NO DISPONIBLE</span>
+            <span class="lock-symbol" aria-hidden="true">✳</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="chapters-note">
+        El manuscrito irá tomando forma a medida que avance la historia.
+      </p>
+
+    </section>
 
 
-        <!-- CAPÍTULOS -->
+    <!-- ARCHIVO -->
+    <section class="archive section-padding" id="archivo">
 
-        
-<section class="manuscript" id="capitulos">
+      <div class="archive-content">
+        <p class="section-label">03 — EL ARCHIVO</p>
 
-    <div class="section-label">
-        ARCHIVO NARRATIVO — 001
-    </div>
+        <h2>
+          Hay cosas que<br>
+          <em>merecen ser recordadas.</em>
+        </h2>
 
-    <h2>El manuscrito</h2>
+        <p>
+          Un espacio para los fragmentos, las imágenes y los detalles
+          que forman parte del universo de To Hold Me.
+        </p>
 
-    <p class="manuscript-intro">
-        Cada página guarda una parte de la historia.
+        <span class="archive-status">
+          ARCHIVO EN CONSTRUCCIÓN
+        </span>
+      </div>
+
+      <div class="archive-decoration" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer" id="contacto">
+
+    <a class="footer-logo" href="#inicio">TO HOLD ME<span>.</span></a>
+
+    <p class="footer-phrase">
+      The silence before the snow.
     </p>
 
-    <article class="manuscript-entry">
+    <div class="footer-bottom">
+      <span>© 2026 TO HOLD ME</span>
+      <a href="#inicio">VOLVER AL INICIO ↑</a>
+    </div>
 
-        <div class="entry-number">01</div>
-
-        <div class="entry-details">
-            <span>CAPÍTULO PRIMERO</span>
-            <h3>El comienzo</h3>
-            <p>Los acontecimientos previos a la primera nevada.</p>
-        </div>
-
-        <a href="capitulo-01.html" class="entry-arrow"
-           aria-label="Leer el capítulo primero">
-            ↗
-        </a>
-
-    </article>
-
-    <article class="manuscript-entry locked-entry">
-
-        <div class="entry-number">02</div>
-
-        <div class="entry-details">
-            <span>CAPÍTULO SEGUNDO</span>
-            <h3>Sin revelar</h3>
-            <p>El siguiente fragmento permanece oculto.</p>
-        </div>
-
-        <span class="entry-lock">BLOQUEADO</span>
-
-    </article>
-
-</section>
-
-
-
-        <!-- UNIVERSO -->
-
-        <section class="universe-section" id="universe">
-
-            <div class="section-label">03 — THE SETTING</div>
-
-            <h2>The World of To Hold Me</h2>
-
-            <div class="universe-image"></div>
-
-            <p>
-                A wilderness swallowed by fog.
-                A season caught between autumn and winter.
-                And secrets hidden beneath the silence.
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <!-- PIE DE PÁGINA -->
-
-    <footer>
-        <div class="footer-title">TO HOLD ME.</div>
-
-        <p>A story waiting to be uncovered.</p>
-
-        <span>© 2026 — ALL RIGHTS RESERVED</span>
-    </footer>
+  </footer>
 
 </body>
 </html>
