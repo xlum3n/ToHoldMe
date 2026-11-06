@@ -423,6 +423,50 @@ img {
   letter-spacing: 3px;
 }
 
+/* ==========================
+   SECCIONES
+========================== */
+
+.section-label {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #B5A58C;
+    margin-bottom: 50px;
+}
+
+.story-section,
+.chapters-section,
+.universe-section {
+    padding: 120px 15%;
+}
+
+.story-section {
+    background: #1D2528;
+}
+
+.story-content {
+    max-width: 650px;
+    margin-left: auto;
+}
+
+.story-content h2,
+.chapters-section h2,
+.universe-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+.story-content p,
+.universe-section p {
+    color: #AEB7B5;
+    font-size: 13px;
+    line-height: 2.2;
+    max-width: 520px;
+    margin-bottom: 20px;
+}
 
 /* CAPÍTULOS */
 
@@ -674,6 +718,22 @@ img {
 
 }
 
+/* ==========================
+   ANIMACIONES
+========================== */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* MÓVILES */
 
@@ -697,10 +757,10 @@ img {
     letter-spacing: 0.8px;
   }
 
-  .hero h1 {
+  /* .hero h1 {
     font-size: clamp(65px, 16vw, 100px);
     letter-spacing: -2px;
-  }
+  } */
 
   .eyebrow {
     font-size: 8px;
