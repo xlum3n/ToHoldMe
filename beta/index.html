@@ -22,48 +22,104 @@
     <!-- NAVEGACIÓN -->
 
     <header class="navbar">
-        <a href="#home" class="logo">TO HOLD ME<span>.</span></a>
 
-        <nav>
-            <a href="#story">THE STORY</a>
-            <a href="#chapters">CHAPTERS</a>
-            <a href="#universe">THE UNIVERSE</a>
-        </nav>
-    </header>
+    <a href="#inicio" class="logo">
+        TO HOLD ME<span>.</span>
+    </a>
+
+    <nav aria-label="Navegación principal">
+        <a href="#umbral">EL UMBRAL</a>
+        <a href="#capitulos">CAPÍTULOS</a>
+        <a href="#archivo">EL ARCHIVO</a>
+    </nav>
+
+</header>
 
 
     <!-- PORTADA -->
 
     <main>
 
-        <section class="hero" id="home">
+        
+<section class="hero" id="inicio">
 
-            <div class="hero-overlay"></div>
+    <div class="hero-background"></div>
+    <div class="fog fog-one"></div>
+    <div class="fog fog-two"></div>
+    <div class="dark-vignette"></div>
 
-            <div class="hero-content">
-                <span class="eyebrow">A NOVEL OF MYSTERY & SUSPENSE</span>
+    <div class="hero-content">
 
-                <h1>To Hold Me</h1>
+        <span class="eyebrow">
+            UNA NOVELA DE MISTERIO Y SUSPENSO
+        </span>
 
-                <div class="title-divider"></div>
+        <h1>To Hold Me</h1>
 
-                <p class="hero-description">
-                    Before the first snowfall,<br>
-                    something was already waiting.
-                </p>
+        <div class="title-divider"></div>
 
-                <a href="#story" class="explore-button">
-                    ENTER THE STORY
-                    <span>↓</span>
-                </a>
-            </div>
+        <p class="hero-description">
+            Antes de la primera nevada,<br>
+            el silencio ya escondía algo.
+        </p>
 
-            <div class="hero-footer">
-                <span>CANADIAN TAIGA</span>
-                <span>BEFORE WINTER</span>
-            </div>
+        <a href="#umbral" class="explore-button">
+            DESCUBRIR LA HISTORIA
+            <span>↓</span>
+        </a>
 
-        </section>
+    </div>
+
+    <div class="hero-footer">
+        <span>TAIGA CANADIENSE</span>
+        <span>ANTES DEL INVIERNO</span>
+    </div>
+
+    <div class="scroll-indicator">
+        <span>DESLIZA PARA CONTINUAR</span>
+        <div></div>
+    </div>
+
+</section>
+
+        
+<section class="threshold" id="umbral">
+
+    <div class="threshold-image"></div>
+
+    <div class="threshold-content">
+
+        <span class="section-label">
+            UNA HISTORIA COMIENZA
+        </span>
+
+        <h2>
+            Hay lugares<br>
+            que prefieren<br>
+            permanecer ocultos.
+        </h2>
+
+        <div class="title-divider"></div>
+
+        <p>
+            En algún lugar de la taiga canadiense,
+            el otoño comienza a despedirse.
+
+            Los días se acortan, la niebla se
+            vuelve más espesa y el invierno
+            se aproxima silenciosamente.
+
+            Pero hay cosas que no desaparecen
+            con la llegada del frío.
+        </p>
+
+        <span class="threshold-signature">
+            TO HOLD ME — 001
+        </span>
+
+    </div>
+
+</section>
 
 
         <!-- INTRODUCCIÓN -->
@@ -98,47 +154,52 @@
 
         <!-- CAPÍTULOS -->
 
-        <section class="chapters-section" id="chapters">
+        
+<section class="manuscript" id="capitulos">
 
-            <div class="section-label">02 — THE MANUSCRIPT</div>
+    <div class="section-label">
+        ARCHIVO NARRATIVO — 001
+    </div>
 
-            <h2>Chapters</h2>
+    <h2>El manuscrito</h2>
 
-            <p class="section-description">
-                Every story begins somewhere.
-            </p>
+    <p class="manuscript-intro">
+        Cada página guarda una parte de la historia.
+    </p>
 
-            <div class="chapter-card">
+    <article class="manuscript-entry">
 
-                <div class="chapter-number">CHAPTER 01</div>
+        <div class="entry-number">01</div>
 
-                <div class="chapter-info">
-                    <h3>The Beginning</h3>
-                    <p>
-                        The days before the first snowfall.
-                    </p>
-                </div>
+        <div class="entry-details">
+            <span>CAPÍTULO PRIMERO</span>
+            <h3>El comienzo</h3>
+            <p>Los acontecimientos previos a la primera nevada.</p>
+        </div>
 
-                <a href="#" class="chapter-link">
-                    READ CHAPTER →
-                </a>
+        <a href="capitulo-01.html" class="entry-arrow"
+           aria-label="Leer el capítulo primero">
+            ↗
+        </a>
 
-            </div>
+    </article>
 
-            <div class="chapter-card unavailable">
+    <article class="manuscript-entry locked-entry">
 
-                <div class="chapter-number">CHAPTER 02</div>
+        <div class="entry-number">02</div>
 
-                <div class="chapter-info">
-                    <h3>Unknown</h3>
-                    <p>Not yet revealed.</p>
-                </div>
+        <div class="entry-details">
+            <span>CAPÍTULO SEGUNDO</span>
+            <h3>Sin revelar</h3>
+            <p>El siguiente fragmento permanece oculto.</p>
+        </div>
 
-                <span class="locked">COMING SOON</span>
+        <span class="entry-lock">BLOQUEADO</span>
 
-            </div>
+    </article>
 
-        </section>
+</section>
+
 
 
         <!-- UNIVERSO -->
